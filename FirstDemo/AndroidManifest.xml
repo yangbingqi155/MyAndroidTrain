@@ -15,7 +15,9 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:theme="@style/ActionBarDark"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +27,9 @@
         <activity
             android:name=".DisplayMesaageActivity"
             android:label="@string/title_activity_display_mesaage"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity" 
+            android:theme="@style/ThemeLight"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.firstdemo.MainActivity" />
