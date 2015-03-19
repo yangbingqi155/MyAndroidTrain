@@ -10,9 +10,17 @@ public class DisplayMesaageActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		setContentView(R.layout.activity_display_mesaage);
 	}
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu){
+		
+		return true;
+	}
+	
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
