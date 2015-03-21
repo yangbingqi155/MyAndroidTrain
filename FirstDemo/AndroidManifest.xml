@@ -28,7 +28,7 @@
             android:name=".DisplayMesaageActivity"
             android:label="@string/title_activity_display_mesaage"
             android:parentActivityName=".MainActivity" 
-            android:theme="@style/ThemeLight"
+            android:theme="@style/CustomActionBarTheme"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
