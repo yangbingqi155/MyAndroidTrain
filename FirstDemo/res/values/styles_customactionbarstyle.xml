@@ -30,11 +30,12 @@
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_customactionbarstyle</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Customactionbarstyle</item>
 
+        <item name="windowActionBarOverlay">true</item>
         
     </style>
 
     <style name="ActionBar.Solid.Customactionbarstyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="background">@drawable/ab_solid_customactionbarstyle</item>
+        <item name="background">@drawable/c_action_background</item>
         <item name="backgroundStacked">@drawable/ab_stacked_solid_customactionbarstyle</item>
         <item name="backgroundSplit">@drawable/ab_bottom_solid_customactionbarstyle</item>
         <item name="progressBarStyle">@style/ProgressBar.Customactionbarstyle</item>
