@@ -8,5 +8,6 @@
     <string name="button_send">Send</string>
     <string name="title_activity_display_mesaage">MyMessage</string>
     <string name="search_btn_title">Search</string>
+    <string name="title_activity_bottom_fragment">BottomFragmentActivity</string>
 
 </resources>
