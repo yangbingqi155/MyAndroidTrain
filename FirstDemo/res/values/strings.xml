@@ -15,8 +15,8 @@
 	
 	<string name="home_bottom_button" >Home</string>
 	<string name="search_bottom_button">Search</string>
-	<string name="account_bottom_button">My Account</string>
+	<string name="account_bottom_button">Account</string>
 	<string name="cart_bottom_button">Cart</string>
-	<string name="preorder_cart_bottom_button">Pre-Card</string>
+	<string name="preorder_cart_bottom_button">Pre-Cart</string>
 	
 </resources>
