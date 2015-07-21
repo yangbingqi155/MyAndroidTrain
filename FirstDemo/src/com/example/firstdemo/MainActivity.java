@@ -9,17 +9,19 @@ import android.view.View;
 import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import com.example.firstdemo.base.BaseBottomMenuActivity;
+import com.example.firstdemo.BottomButton;
+
+
+public class MainActivity extends BaseBottomMenuActivity {
 	public final static String EXTRA_MESSAGE="com.example.firstdemo.MESSAGE";
 	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //setContentView(R.layout.bottom_view);
-    }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -46,10 +48,32 @@ public class MainActivity extends ActionBarActivity {
     
     public void sendMessage(View view)
     {
-    	Intent intent=new Intent(this,DisplayMesaageActivity.class);
-    	EditText editText=(EditText)findViewById(R.id.edit_message);
-    	String message=editText.getText().toString();
-    	intent.putExtra(EXTRA_MESSAGE, message);
-    	startActivity(intent);
+    	
     }
+    
+    public List<BottomButton> getButtonList() {
+		Map<String,String> buttonMaps =  new HashMap<String,String>();
+		buttonMaps.put("Home", String.valueOf(R.drawable.mybat_icon));
+    	buttonMaps.put("Account", String.valueOf(R.drawable.mybat_icon));
+    	buttonMaps.put("Cart", String.valueOf(R.drawable.mybat_icon));
+    	buttonMaps.put("Search", String.valueOf(R.drawable.mybat_icon));
+    
+    	
+    	List<BottomButton> buttons = new ArrayList<BottomButton>();
+        Iterator<String> itKey = buttonMaps.keySet().iterator();
+        while(itKey.hasNext())
+        {
+        	String key = itKey.next();
+        	String valueRes = buttonMaps.get(key);
+        	BottomButton oneBottomButton = new BottomButton();
+        	oneBottomButton.setText(key);
+        	oneBottomButton.setBackgroundResource(Integer.parseInt(valueRes));
+        	buttons.add(oneBottomButton);
+        }
+        return buttons;
+	}
+
+	public int getContentViewLayoutResId() { return R.layout.activity_main; }
+
+	protected void onCreatOverride(Bundle savedInstanceState) { }
 }
