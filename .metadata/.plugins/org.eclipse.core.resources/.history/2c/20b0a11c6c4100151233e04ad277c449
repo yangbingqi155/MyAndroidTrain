@@ -61,7 +61,7 @@ public class BottomMenuLayout extends LinearLayout {
 			int screenHeight = GlobalUtils.getInstance().getScreenHeight();
 			
 			int lessHeight = screenHeight ;
-			params.height = lessHeight-400;
+			params.height = lessHeight;
 			customView.setLayoutParams(params);
 		}
 

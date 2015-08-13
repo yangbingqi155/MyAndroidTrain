@@ -15,7 +15,4 @@
 	<string name="search_btn_title">Search</string>
 	<string name="coming_soon_action_bar">ComingSoon</string>
 	<string name="new_arrive_action_bar">New</string>
-	<string name="special_products_action_bar">Special</string>
-	
-	<string name="title_activity_bottom_fragment">Bottom</string>
 </resources>
