@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:valor="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.firstdemo.MainActivity" >
+
+
+    <item android:id="@+id/cart_action_bar" 
+        android:orderInCategory="100"
+        android:title="@string/cart_action_bar_title"
+        valor:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/order_action_bar" 
+        android:orderInCategory="200"
+        android:title="@string/order_action_bar_title"
+        valor:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/account_action_bar" 
+        android:orderInCategory="300"
+        android:title="@string/account_action_bar_title"
+        valor:showAsAction="ifRoom"
+        />
+    
+    <item android:id="@+id/home_action_bar"
+        android:orderInCategory="400"
+        android:title="@string/home_action_bar_title"
+        valor:showAsAction="never"
+        />
+
+        <item 
+	    android:id="@+id/coming_soon_action_bar"
+	    android:orderInCategory="500"
+	    android:title="@string/coming_soon_action_bar_title"
+	    valor:showAsAction="never"
+	    />
+    
+ 
+	
+	<item 
+	    android:id="@+id/new_arrival_action_bar"
+	    android:orderInCategory="600"
+	    android:title="@string/new_arrive_action_bar_title"
+		valor:showAsAction="never"
+	    />
+	<item 
+	    android:id="@+id/special_products_action_bar"
+	    android:orderInCategory="700"
+	    android:title="@string/special_products_action_bar_title"
+	    valor:showAsAction="never"
+	    />
+	
+	   <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="400"
+        android:title="@string/settings_action_bar_title"
+        valor:showAsAction="never"/>
+</menu>

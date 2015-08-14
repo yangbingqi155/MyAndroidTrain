@@ -39,10 +39,7 @@ public class MainActivity extends BaseBottomMenuActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        else if(id==R.id.search_btn)
-        {
-        	return true;
-        }
+      
         return super.onOptionsItemSelected(item);
     }
     

@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:valor="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.firstdemo.MainActivity" >
+
+    <item android:id="@+id/search_btn" 
+        android:orderInCategory="200"
+        android:title="@string/search_btn_title"
+        valor:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/cart_btn" 
+        android:orderInCategory="300"
+        android:title="@string/cart_action_bar_title"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        valor:showAsAction="never"/>
+	<item 
+	    android:id="@+id/coming_soon_action_bar"
+	    android:orderInCategory="300"
+	    android:title="@string/coming_soon_action_bar"
+	    valor:showAsAction="never"
+	    />
+	<item 
+	    android:id="@+id/new_arrival_action_bar"
+	    android:orderInCategory="400"
+	    android:title="@string/new_arrive_action_bar"
+		valor:showAsAction="never"
+	    />
+	<item 
+	    android:id="@+id/special_products_action_bar"
+	    android:orderInCategory="700"
+	    android:title="@string/special_products_action_bar"
+	    valor:showAsAction="never"
+	    />
+</menu>
